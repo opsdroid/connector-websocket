@@ -91,6 +91,8 @@ class ConnectorWebsocket(Connector):
     async def respond(self, message):
         """ Respond with a message """
         try:
+            if message.room is None:
+                message.room = next(iter(self.active_connections))
             _LOGGER.debug("Responding with: '" + message.text +
                           "' in room " + message.room)
             self.active_connections[message.room].send_str(message.text)

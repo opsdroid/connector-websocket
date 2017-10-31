@@ -31,7 +31,3 @@ connectors:
     max-connections: 10 # default is 10 users can be connected at once
     connection-timeout: 10 # default 10 seconds before requested socket times out
 ```
-
-## License
-
-GNU General Public License Version 3 (GPLv3)

@@ -1,6 +1,5 @@
 import logging
 import os
-import pwd
 import time
 import asyncio
 import json

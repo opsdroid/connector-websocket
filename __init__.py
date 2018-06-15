@@ -94,6 +94,6 @@ class ConnectorWebsocket(Connector):
                 message.room = next(iter(self.active_connections))
             _LOGGER.debug("Responding with: '" + message.text +
                           "' in room " + message.room)
-            self.active_connections[message.room].send_str(message.text)
+            await self.active_connections[message.room].send_str(message.text)
         except KeyError:
             _LOGGER.error("No active socket for room %s", message.room)

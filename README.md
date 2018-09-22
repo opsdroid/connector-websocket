@@ -1,3 +1,5 @@
+⚠️ *DEPRECATED* ⚠️ This connector is now built in to [opsdroid core](https://opsdroid.readthedocs.io/en/stable/connectors/slack/). This repository only exists for backward compatibility and will be removed.
+
 # opsdroid connector websocket
 
 A connector for [opsdroid](https://github.com/opsdroid/opsdroid) to listen for messages using websockets.
